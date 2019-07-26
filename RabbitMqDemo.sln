@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDemo", "RabbitMqDemo\RabbitMqDemo.csproj", "{0500BCE3-27F2-499F-962C-46CAB8EE5447}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message", "Message", "{5B779789-46B5-4C35-8071-6E7AB38B38B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GD.CoursePreparationSystem.Message", "GD.CoursePreparationSystem.Message\GD.CoursePreparationSystem.Message.csproj", "{8BEA674C-44BD-418C-B607-1FEDBCD09D5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GD.CoursePreparationSystem.Domain", "GD.CoursePreparationSystem.Domain\GD.CoursePreparationSystem.Domain.csproj", "{640AEE4A-78FF-4AA9-A09A-BCCDBA787F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GD.CoursePreparationSystem.RabbitMQ", "GD.CoursePreparationSystem.RabbitMQ\GD.CoursePreparationSystem.RabbitMQ.csproj", "{F9F9AD7E-F4BA-43ED-90E0-0484C63F9E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageReceive", "MessageReceive\MessageReceive.csproj", "{F426801D-07E5-42DA-AE88-21230C480D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GD.CoursePreparationSystem.Common", "GD.CoursePreparationSystem.Common\GD.CoursePreparationSystem.Common.csproj", "{D03299C3-25B9-4F18-9C7B-B0C960F66B11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0500BCE3-27F2-499F-962C-46CAB8EE5447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0500BCE3-27F2-499F-962C-46CAB8EE5447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0500BCE3-27F2-499F-962C-46CAB8EE5447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0500BCE3-27F2-499F-962C-46CAB8EE5447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BEA674C-44BD-418C-B607-1FEDBCD09D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEA674C-44BD-418C-B607-1FEDBCD09D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEA674C-44BD-418C-B607-1FEDBCD09D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEA674C-44BD-418C-B607-1FEDBCD09D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640AEE4A-78FF-4AA9-A09A-BCCDBA787F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640AEE4A-78FF-4AA9-A09A-BCCDBA787F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640AEE4A-78FF-4AA9-A09A-BCCDBA787F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640AEE4A-78FF-4AA9-A09A-BCCDBA787F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F9AD7E-F4BA-43ED-90E0-0484C63F9E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F9AD7E-F4BA-43ED-90E0-0484C63F9E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F9AD7E-F4BA-43ED-90E0-0484C63F9E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F9AD7E-F4BA-43ED-90E0-0484C63F9E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F426801D-07E5-42DA-AE88-21230C480D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F426801D-07E5-42DA-AE88-21230C480D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F426801D-07E5-42DA-AE88-21230C480D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F426801D-07E5-42DA-AE88-21230C480D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03299C3-25B9-4F18-9C7B-B0C960F66B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03299C3-25B9-4F18-9C7B-B0C960F66B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03299C3-25B9-4F18-9C7B-B0C960F66B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03299C3-25B9-4F18-9C7B-B0C960F66B11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BEA674C-44BD-418C-B607-1FEDBCD09D5A} = {5B779789-46B5-4C35-8071-6E7AB38B38B8}
+		{640AEE4A-78FF-4AA9-A09A-BCCDBA787F04} = {5B779789-46B5-4C35-8071-6E7AB38B38B8}
+		{F9F9AD7E-F4BA-43ED-90E0-0484C63F9E6F} = {5B779789-46B5-4C35-8071-6E7AB38B38B8}
+		{D03299C3-25B9-4F18-9C7B-B0C960F66B11} = {5B779789-46B5-4C35-8071-6E7AB38B38B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC15B325-5B34-491E-B834-FF35DA809575}
+	EndGlobalSection
+EndGlobal
