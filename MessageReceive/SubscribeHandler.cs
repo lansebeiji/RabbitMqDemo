@@ -52,7 +52,8 @@ namespace MessageReceive
                             {
                                 IRabbitMessageHandler handler = IocManager.Resolve<IRabbitMessageHandler>(type);
                                 response = handler.HandleRabbitMessage(message);
-                                strMessage += message;
+                                //strMessage += message;
+                                Loger.Write(message);
                             }
 
                             catch (Exception ex)

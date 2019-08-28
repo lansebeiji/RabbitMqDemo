@@ -15,11 +15,12 @@ namespace GD.CoursePreparationSystem.Message
     {
         private static readonly RabbitBaseQueue rabbitMQ = IocManager.Resolve<RabbitBaseQueue>();
 
-        public static bool SendTestMessage(CourseDto dto)
+        public static bool SendTestMessage(MessageContent dto)
         {
             var message = JsonConvert.SerializeObject(dto);
             try
             {
+              
                 rabbitMQ.SendTextMessage(MessageInfos.ERP_StockCheck_MQ, message);
                 return true;
             }
@@ -34,6 +35,17 @@ namespace GD.CoursePreparationSystem.Message
                 return false;
             }
         }
+
+
+    }
+    public class MessageContent
+    {
+        // 0 修改 1 删除 2 新增
+        public int state { get; set; }
+
+        public object data { get; set; }
+
+        public string type { get; set; }
     }
 }
 

@@ -30,17 +30,24 @@ namespace RabbitMqDemo
             iocManager.RegisterAutofacModules(assemblies);
             var container = iocManager.Build();
             AutoMapperConfiguration.Initialize(assemblies);
-           
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-           bool b= MessageSender.SendTestMessage(new CourseDto
-            {
-                Id = 11,
-                Name = "test"
-            });
-            if(b)
+            bool b = MessageSender.SendTestMessage(
+                  new MessageContent
+                  {
+                      state = 1,
+                      data = new CourseDto
+                      {
+                          Id = 11,
+                          Name = "test"
+                      },
+                      type = new CourseDto().GetType().Name
+                  }
+             );
+            if (b)
             {
                 MessageBox.Show("消息发送success");
             }

@@ -34,7 +34,7 @@ namespace MessageReceive
         private void Button1_Click(object sender, EventArgs e)
         {
             var handler = new SubscribeHandler();
-            MessageBox.Show(handler.Listening());
+            handler.Listening();
         }
     }
 }
